@@ -20,5 +20,13 @@ public class DaysOfTheWeekII {
             System.out.print(day + " ");
             count++;
         }
+
+        System.out.println();
+        // do -  while loop
+        count = 0;
+        do {
+            System.out.print(days[count] + " ");
+            count++;
+        } while (count < days.length);
     }
 }
