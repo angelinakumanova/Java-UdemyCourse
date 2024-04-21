@@ -59,6 +59,18 @@ public class Main {
         cars3.addAll(carsList);
         System.out.println(cars3);
 
-        
+        //6. Same as exercise 5 but allow program to remove a model by passing the model name as
+        //an argument to the main() method.
+        Iterator<Car> iterator = cars3.iterator();
+        while (iterator.hasNext()) {
+            Car currentCar = iterator.next();
+            if (currentCar.getModel().equals(args[0])) {
+                iterator.remove();
+                break;
+            }
+
+        }
+        System.out.println(cars3);
+
     }
 }
